@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project
+database/*.db
+faces/*.jpg
+faces/*.png
+*.log
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets (local)
+.streamlit/secrets.toml
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
