@@ -127,7 +127,7 @@ def page_live_attendance() -> None:
                     st.success(processor.last_message)
                 else:
                     st.warning(processor.last_message)
-        elif ctx.state.connection_state == "failed":
+        elif not ctx.state.playing:
             st.error(
                 "WebRTC connection failed. Check camera permissions, try a different browser, "
                 "or ensure your network allows WebRTC (some corporate networks block it)."
